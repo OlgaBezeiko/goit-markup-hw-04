@@ -147,7 +147,19 @@ color: var(--color-body);
   background-color: var(--color-navy-blue-overlay-shadow-heading);
   padding: 188px 0px;
   text-align: center;
+
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/fon-hero1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
 }
+
 
 .hero-one {
 width: 500px;
