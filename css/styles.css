@@ -1,5 +1,5 @@
 
-
+/*=======================загальні класи та змінні=====================*/
 :root {
   --color-ocean-hover-pressed: #404BBF;
   --color-iris-focus-aktiv-link: #4D5AE5;
@@ -8,7 +8,10 @@
   --color-body: #FFFFFF;
   --color-cloud-accent: #F4F4FD;
   --color-cornflower-accent: #E7E9FC;
+  --color-helper:#8E8F99;
+  --color-green-akcent:#31D0AA;
   --primary-font:'Roboto', sans-serif;
+  
 }
 
 h1,h2,h3,p {
@@ -46,11 +49,8 @@ background-color: var(--color-body);}
 padding-top: 120px;
 padding-bottom: 120px;}
 
-.section-padding-portfolio {
-  padding-top: 168px;
-  padding-bottom: 120px;
-}
 
+/*==========================ХЕДЕР=====================================*/
 .page-heder {padding-top: 24px;
 padding-bottom: 24px;
 border-bottom: 1px solid var(--color-cornflower-accent);}
@@ -60,6 +60,22 @@ border-bottom: 1px solid var(--color-cornflower-accent);}
   align-items: center;
 }
 
+.logo {
+  font-family: 'raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--color-navy-blue-overlay-shadow-heading);
+  text-transform: uppercase;
+
+  margin-right: 76px;
+}
+
+.part-of-word {
+  color: var(--color-iris-focus-aktiv-link);
+}
+/*========================Навігація в хедері=========================================*/
 .site-nav {
   display: flex;
   align-items: center;
@@ -68,18 +84,6 @@ border-bottom: 1px solid var(--color-cornflower-accent);}
 .menu {
   display: flex;
   align-items: center;
-}
-
-.portfolio-btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.menu-portfolio-btn:not(:last-child) {
-  margin-right: 24px;
 }
 
 .address-main {margin-left: auto;}
@@ -99,12 +103,10 @@ align-items: center;}
   letter-spacing: 0.02em;
   color: var(--color-navy-blue-overlay-shadow-heading);
 }
-
 .menu-link:hover,
 .menu-link:focus {
   color: var(--color-ocean-hover-pressed);
 }
-
 .contact-mail-phone  {
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -121,6 +123,7 @@ color: var(--color-slate-text);
 .contact-mail-phone:focus {
   color: var(--color-ocean-hover-pressed);}
 
+  /*=========================Герой====================*/
 .button {
 background-color: var(--color-iris-focus-aktiv-link);
 font-family: 'Roboto', sans-serif;
@@ -155,9 +158,8 @@ color: var(--color-body);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-
 }
+
 .hero-one {
 width: 500px;
 margin-right: auto;
@@ -168,6 +170,8 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 color: var(--color-body);
 }
+
+/*===========================Друга секція ПЕРЕВАГИ=========================*/
 .second {
   padding-top: 120px;}
 
@@ -204,7 +208,6 @@ justify-content: center;
 align-items: center;
 }
 
- 
  .second-list-item {
   flex-basis: calc((100% - 3*24px) / 4);
  }
@@ -215,6 +218,7 @@ align-items: center;
   color: var(--color-slate-text)
   }
 
+  /*=========================Третя секція ЩО МИ РОБИМО====================*/
 .third-list {display: flex;
 flex-wrap: wrap;
 gap: 24px;}
@@ -222,22 +226,10 @@ gap: 24px;}
 .third-list-item {
   flex-basis: calc((100% - 2*24px) / 3);}
 
-  .logo {
-font-family: 'raleway', sans-serif;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
-letter-spacing: 0.03em;
-color: var(--color-navy-blue-overlay-shadow-heading);
-text-transform: uppercase;
-
-margin-right: 76px;}
-
-  .part-of-word {
-    color: var(--color-iris-focus-aktiv-link);
-  }
-  .fourth {
-    background-color: var(--color-cloud-accent)}
+/*============================Четверта секція НАША КОМАНДА=================*/
+  
+.fourth {
+background-color: var(--color-cloud-accent)}
 
 .team-list {margin-top: 72px;
 display: flex;
@@ -250,23 +242,13 @@ gap: 48px 24px;}
   text-align: center;
 }
 
-.portfolio-card-heder {
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  border-right: 1px solid var(--color-cornflower-accent);
-  border-left: 1px solid var(--color-cornflower-accent);
-  border-bottom: 1px solid var(--color-cornflower-accent);
-}
+
 .team-card {
 flex-basis: calc((100% - 3*24px) / 4);
 background-color: var(--color-body);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;}
 
-.portfolio-card {
-flex-basis: calc((100% - 2*24px) / 3);}
 
 .social-list {
   display: flex;
@@ -288,6 +270,10 @@ flex-basis: calc((100% - 2*24px) / 3);}
 .social-list-link:focus {
   background-color: var(--color-ocean-hover-pressed);
 }
+
+
+/*============================Секція з лого компаній================*/
+
 .fifth {padding-top: 130px;
 padding-bottom: 120px;
 }
@@ -304,8 +290,9 @@ padding-bottom: 120px;
   width: 168px;
   height: 88px;
   border-radius: 4px;
-  border: 1px solid #8E8F99;
+  border: 1px solid var(--color-helper);
 }
+
 
 .company-link:hover,
 .company-link:focus {
@@ -313,13 +300,16 @@ padding-bottom: 120px;
 }
 
 .company-icon {
-  fill: #8E8F99;
+  fill: var(--color-helper);
 }
 .company-icon:hover,
 .company-icon:focus {
   fill: var(--color-ocean-hover-pressed);
 
 }
+
+/*================Футер=======================*/
+
   .footer {
     background-color: var(--color-navy-blue-overlay-shadow-heading);
     padding-top: 100px;
@@ -356,12 +346,13 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     font-weight: 500;
+    margin-bottom: 24px;
   }
 
   .social-container-footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 120px;
   }
     .social-list-footer {
       display: flex;
@@ -372,7 +363,6 @@ padding-bottom: 120px;
   
     .footer-container {
       display: flex;
-      padding-right: 120px;
     }
     .social-list-link-footer {
       display: flex;
@@ -386,12 +376,23 @@ padding-bottom: 120px;
 
   .social-list-link-footer:hover,
   .social-list-link-footer:focus {
-    background-color: #31D0AA;
+    background-color: var(--color-green-akcent);
   }
+/*===============================Портфоліо друга сторінка==============================*/
+
+.portfolio-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
   .nav-btn:hover,
   .nav-btn:focus{
   background-color: var(--color-ocean-hover-pressed);
   color: var(--color-body);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   .nav-btn {
@@ -407,3 +408,31 @@ padding-bottom: 120px;
   border: 1px solid #E7E9FC;
 border-radius: 4px;
   }
+
+.menu-portfolio-btn:not(:last-child) {
+  margin-right: 24px;
+}
+
+.section-padding-portfolio {
+  padding-top: 168px;
+  padding-bottom: 120px;
+}
+
+.portfolio-card-heder {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid var(--color-cornflower-accent);
+  border-left: 1px solid var(--color-cornflower-accent);
+  border-bottom: 1px solid var(--color-cornflower-accent);
+}
+
+.portfolio-card {
+  flex-basis: calc((100% - 2*24px) / 3);
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
