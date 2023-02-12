@@ -370,6 +370,10 @@ padding-bottom: 120px;
     
     }
   
+    .footer-container {
+      display: flex;
+      padding-right: 120px;
+    }
     .social-list-link-footer {
       display: flex;
       justify-content: center;
