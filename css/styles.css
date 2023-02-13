@@ -190,6 +190,7 @@ margin-bottom: 72px;}
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   margin-top: 8px;
+  color: var(--color-navy-blue-overlay-shadow-heading);
  }
  
  .second-list {
@@ -272,7 +273,7 @@ border-radius: 0px 0px 4px 4px;}
 }
 
 
-/*============================Секція з лого компаній================*/
+/*========Секція з лого компаній. КЛІЄНТИ================*/
 
 .fifth {padding-top: 130px;
 padding-bottom: 120px;
@@ -296,17 +297,13 @@ padding-bottom: 120px;
 
 .company-link:hover,
 .company-link:focus {
+  fill: var(--color-ocean-hover-pressed);
   border-color: var(--color-ocean-hover-pressed);
 }
-
-.company-icon {
+.company-link {
   fill: var(--color-helper);
 }
-.company-icon:hover,
-.company-icon:focus {
-  fill: var(--color-ocean-hover-pressed);
 
-}
 
 /*================Футер=======================*/
 
@@ -378,7 +375,7 @@ padding-bottom: 120px;
   .social-list-link-footer:focus {
     background-color: var(--color-green-akcent);
   }
-/*===============================Портфоліо друга сторінка==============================*/
+/*=============Портфоліо друга сторінка==============================*/
 
 .portfolio-btn-container {
   display: flex;
@@ -414,12 +411,12 @@ border-radius: 4px;
 }
 
 .section-padding-portfolio {
-  padding-top: 168px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
 .portfolio-card-heder {
-  text-align: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -432,7 +429,7 @@ border-radius: 4px;
   flex-basis: calc((100% - 2*24px) / 3);
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
